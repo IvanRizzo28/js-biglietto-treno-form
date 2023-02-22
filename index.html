@@ -13,14 +13,15 @@
     <div class="container">
         <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
         <div class="calcola">
-                <div>
+            
+                <div class="flex-around">
                     <div>
                         <label for="nome">Nome e Cognome</label>
                         <input type="text" id="nome">
                     </div>
                     <div>
                         <label for="km">Km da percorrere</label>
-                        <input type="number" id="km" min="1">
+                        <input type="number" id="km">
                     </div>
                     <div>
                         <label for="eta">Fascia d'età</label>
@@ -28,17 +29,42 @@
                             <option value="minorenne">Minorenne</option>
                             <option value="maggiorenne">Maggiorenne</option>
                             <option value="over65">Over 65</option>
-                        </select>
-                    </div>
+                        </select></div>
                 </div>
-                <div>
+                <div class="mt-2">
                     <button id="genera">Genera</button>
-                    <button id="reset" type="reset">Annulla</button>
+                    <button id="annulla" type="reset">Annulla</button>
                 </div>
         </div>
         <h1>IL TUO BIGLIETTO</h1>
-        <div class="biglietto">
-            
+        <div class="biglietto" id="biglietto">
+            <h2 class="w-30">DETTAGLI PASSEGGERO</h2>
+            <div class="flex">
+                <div class="nome w-30">
+                    <h2 class="mb-1">NOME DEL PASSEGERO:</h2>
+                    <h2 id="nome-passeggero"></h2>
+                </div>
+                <div class="tabella">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="w-40">Offerta</th>
+                                <th class="w-20">Carrozza</th>
+                                <th class="w-20">Codice CP</th>
+                                <th class="w-20">Costo biglietto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="tipo-biglietto"></td>
+                                <td>5</td>
+                                <td>92911</td>
+                                <td id="prezzo"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 

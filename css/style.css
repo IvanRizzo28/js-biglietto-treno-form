@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: brown;
+}
+
+.container{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-bottom: 20px;
+}
+
+h1{
+    color: #fff;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-around{
+    display: flex;
+    justify-content: space-around;
+}
+
+.calcola,.biglietto{
+    background-color: #fff;
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.calcola{
+    border-radius: 5px;
+    color: brown;
+}
+
+.biglietto{
+    text-align: left;
+    color: #000;
+    display: none;
+}
+
+input,select{
+    border: 1px solid brown;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+button{
+    padding: 5px 20px;
+    border: 1px solid brown;
+    color: brown;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.mt-2{
+    margin-top: 40px;
+}
+
+.mb-1{
+    margin-bottom: 20px;
+}
+
+.nome{
+    padding: 20px 20px 80px 20px;
+    background-color: gray;
+}
+
+.tabella{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    flex-basis: 100%;
+    padding: 20px;
+}
+
+table{
+    height: 100%;
+}
+
+.w-30{
+    width: 30%;
+}
+
+.mr{
+    margin-right: 100px;
+}
+
+.w-40{
+    width: 40%;
+}
+
+.w-20{
+    width: 20%;
+}
+
+.show{
+    display: block;
+}
